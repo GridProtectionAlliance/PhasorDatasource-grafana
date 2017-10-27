@@ -3,7 +3,7 @@
 System.register(['app/plugins/sdk', './../css/query-editor.css!', 'lodash'], function (_export, _context) {
     "use strict";
 
-    var QueryCtrl, _, _createClass, OpenHistorianDataSourceQueryCtrl, functionList;
+    var QueryCtrl, _, _createClass, PhasorDataSourceQueryCtrl, functionList;
 
     function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor)) {
@@ -60,13 +60,13 @@ System.register(['app/plugins/sdk', './../css/query-editor.css!', 'lodash'], fun
                 };
             }();
 
-            _export('OpenHistorianDataSourceQueryCtrl', OpenHistorianDataSourceQueryCtrl = function (_QueryCtrl) {
-                _inherits(OpenHistorianDataSourceQueryCtrl, _QueryCtrl);
+            _export('PhasorDataSourceQueryCtrl', PhasorDataSourceQueryCtrl = function (_QueryCtrl) {
+                _inherits(PhasorDataSourceQueryCtrl, _QueryCtrl);
 
-                function OpenHistorianDataSourceQueryCtrl($scope, $injector, uiSegmentSrv, templateSrv) {
-                    _classCallCheck(this, OpenHistorianDataSourceQueryCtrl);
+                function PhasorDataSourceQueryCtrl($scope, $injector, uiSegmentSrv, templateSrv) {
+                    _classCallCheck(this, PhasorDataSourceQueryCtrl);
 
-                    var _this = _possibleConstructorReturn(this, (OpenHistorianDataSourceQueryCtrl.__proto__ || Object.getPrototypeOf(OpenHistorianDataSourceQueryCtrl)).call(this, $scope, $injector));
+                    var _this = _possibleConstructorReturn(this, (PhasorDataSourceQueryCtrl.__proto__ || Object.getPrototypeOf(PhasorDataSourceQueryCtrl)).call(this, $scope, $injector));
 
                     _this.scope = $scope;
                     var ctrl = _this;
@@ -113,7 +113,7 @@ System.register(['app/plugins/sdk', './../css/query-editor.css!', 'lodash'], fun
                 // #region Target Compilation
 
 
-                _createClass(OpenHistorianDataSourceQueryCtrl, [{
+                _createClass(PhasorDataSourceQueryCtrl, [{
                     key: 'setTargetWithQuery',
                     value: function setTargetWithQuery() {
                         if (this.wheres.length == 0) return;
@@ -732,10 +732,10 @@ System.register(['app/plugins/sdk', './../css/query-editor.css!', 'lodash'], fun
                     }
                 }]);
 
-                return OpenHistorianDataSourceQueryCtrl;
+                return PhasorDataSourceQueryCtrl;
             }(QueryCtrl));
 
-            _export('OpenHistorianDataSourceQueryCtrl', OpenHistorianDataSourceQueryCtrl);
+            _export('PhasorDataSourceQueryCtrl', PhasorDataSourceQueryCtrl);
 
             OpenHistorianDataSourceQueryCtrl.templateUrl = 'partial/query.editor.html';
 

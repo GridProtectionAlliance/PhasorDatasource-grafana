@@ -1,2 +1,2 @@
-export class OpenHistorianQueryOptionsCtrl{}
-OpenHistorianQueryOptionsCtrl.templateUrl = 'partial/query.options.html';
+export class PhasorQueryOptionsCtrl{}
+PhasorQueryOptionsCtrl.templateUrl = 'partial/query.options.html';

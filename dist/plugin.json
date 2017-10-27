@@ -1,6 +1,6 @@
 {
-  "name": "openHistorian",
-  "id": "gridprotectionalliance-openhistorian-datasource",
+  "name": "Phasor Datasource",
+  "id": "gridprotectionalliance-phasor-datasource",
   "type": "datasource",
   
   "staticRoot": ".",
@@ -24,7 +24,7 @@
       "large": "img/openHistorian.png"
     },
     "links": [
-      {"name": "GitHub", "url": "https://github.com/GridProtectionAlliance/openHistorian-grafana"},
+      {"name": "GitHub", "url": "https://github.com/GridProtectionAlliance/PhasorDatasource-grafana"},
       {"name": "MIT License", "url": "https://github.com/GridProtectionAlliance/openHistorian-grafana/blob/master/LICENSE"},
       {"name": "openHistorian", "url": "http://openHistorian.com"}
     ],

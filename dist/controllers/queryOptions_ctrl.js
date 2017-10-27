@@ -3,7 +3,7 @@
 System.register([], function (_export, _context) {
   "use strict";
 
-  var OpenHistorianQueryOptionsCtrl;
+  var PhasorQueryOptionsCtrl;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -14,13 +14,13 @@ System.register([], function (_export, _context) {
   return {
     setters: [],
     execute: function () {
-      _export('OpenHistorianQueryOptionsCtrl', OpenHistorianQueryOptionsCtrl = function OpenHistorianQueryOptionsCtrl() {
-        _classCallCheck(this, OpenHistorianQueryOptionsCtrl);
+      _export('PhasorQueryOptionsCtrl', PhasorQueryOptionsCtrl = function PhasorQueryOptionsCtrl() {
+        _classCallCheck(this, PhasorQueryOptionsCtrl);
       });
 
-      _export('OpenHistorianQueryOptionsCtrl', OpenHistorianQueryOptionsCtrl);
+      _export('PhasorQueryOptionsCtrl', PhasorQueryOptionsCtrl);
 
-      OpenHistorianQueryOptionsCtrl.templateUrl = 'partial/query.options.html';
+      PhasorQueryOptionsCtrl.templateUrl = 'partial/query.options.html';
     }
   };
 });

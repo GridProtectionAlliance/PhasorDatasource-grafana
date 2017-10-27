@@ -2,7 +2,7 @@ import { QueryCtrl } from 'app/plugins/sdk'
 import './../css/query-editor.css!'
 import _ from 'lodash'
 
-export class OpenHistorianDataSourceQueryCtrl extends QueryCtrl{
+export class PhasorDataSourceQueryCtrl extends QueryCtrl{
     constructor($scope, $injector, uiSegmentSrv, templateSrv) {
         super($scope, $injector);
 

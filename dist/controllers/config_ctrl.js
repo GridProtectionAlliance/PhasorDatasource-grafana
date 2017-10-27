@@ -3,7 +3,7 @@
 System.register([], function (_export, _context) {
   "use strict";
 
-  var OpenHistorianConfigCtrl;
+  var PhasorConfigCtrl;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -14,11 +14,11 @@ System.register([], function (_export, _context) {
   return {
     setters: [],
     execute: function () {
-      _export('OpenHistorianConfigCtrl', OpenHistorianConfigCtrl = function OpenHistorianConfigCtrl() {
-        _classCallCheck(this, OpenHistorianConfigCtrl);
+      _export('PhasorConfigCtrl', PhasorConfigCtrl = function PhasorConfigCtrl() {
+        _classCallCheck(this, PhasorConfigCtrl);
       });
 
-      _export('OpenHistorianConfigCtrl', OpenHistorianConfigCtrl);
+      _export('PhasorConfigCtrl', PhasorConfigCtrl);
 
       OpenHistorianConfigCtrl.templateUrl = 'partial/config.html';
     }

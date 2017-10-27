@@ -3,7 +3,7 @@
 System.register(['lodash'], function (_export, _context) {
   "use strict";
 
-  var _, _createClass, OpenHistorianDataSource;
+  var _, _createClass, PhasorDataSource;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -34,9 +34,9 @@ System.register(['lodash'], function (_export, _context) {
         };
       }();
 
-      _export('OpenHistorianDataSource', OpenHistorianDataSource = function () {
-        function OpenHistorianDataSource(instanceSettings, $q, backendSrv, templateSrv) {
-          _classCallCheck(this, OpenHistorianDataSource);
+      _export('PhasorDataSource', PhasorDataSource = function () {
+        function PhasorDataSource(instanceSettings, $q, backendSrv, templateSrv) {
+          _classCallCheck(this, PhasorDataSource);
 
           this.type = instanceSettings.type;
           this.url = instanceSettings.url;
@@ -46,7 +46,7 @@ System.register(['lodash'], function (_export, _context) {
           this.templateSrv = templateSrv;
         }
 
-        _createClass(OpenHistorianDataSource, [{
+        _createClass(PhasorDataSource, [{
           key: 'query',
           value: function query(options) {
             var query = this.buildQueryParameters(options);
@@ -214,10 +214,10 @@ System.register(['lodash'], function (_export, _context) {
           }
         }]);
 
-        return OpenHistorianDataSource;
+        return PhasorDataSource;
       }());
 
-      _export('OpenHistorianDataSource', OpenHistorianDataSource);
+      _export('PhasorDataSource', PhasorDataSource);
     }
   };
 });

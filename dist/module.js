@@ -3,29 +3,29 @@
 System.register(['./datasource', './controllers/query_ctrl', './controllers/config_ctrl', './controllers/queryOptions_ctrl', './controllers/annotations_ctrl'], function (_export, _context) {
     "use strict";
 
-    var OpenHistorianDataSource, OpenHistorianDataSourceQueryCtrl, OpenHistorianConfigCtrl, OpenHistorianQueryOptionsCtrl, OpenHistorianAnnotaionsQueryCtrl;
+    var PhasorDataSource, PhasorDataSourceQueryCtrl, PhasorConfigCtrl, PhasorQueryOptionsCtrl, PhasorAnnotaionsQueryCtrl;
     return {
         setters: [function (_datasource) {
-            OpenHistorianDataSource = _datasource.OpenHistorianDataSource;
+            PhasorDataSource = _datasource.PhasorDataSource;
         }, function (_controllersQuery_ctrl) {
-            OpenHistorianDataSourceQueryCtrl = _controllersQuery_ctrl.OpenHistorianDataSourceQueryCtrl;
+            PhasorDataSourceQueryCtrl = _controllersQuery_ctrl.PhasorDataSourceQueryCtrl;
         }, function (_controllersConfig_ctrl) {
-            OpenHistorianConfigCtrl = _controllersConfig_ctrl.OpenHistorianConfigCtrl;
+            PhasorConfigCtrl = _controllersConfig_ctrl.PhasorConfigCtrl;
         }, function (_controllersQueryOptions_ctrl) {
-            OpenHistorianQueryOptionsCtrl = _controllersQueryOptions_ctrl.OpenHistorianQueryOptionsCtrl;
+            PhasorQueryOptionsCtrl = _controllersQueryOptions_ctrl.PhasorQueryOptionsCtrl;
         }, function (_controllersAnnotations_ctrl) {
-            OpenHistorianAnnotaionsQueryCtrl = _controllersAnnotations_ctrl.OpenHistorianAnnotaionsQueryCtrl;
+            PhasorAnnotaionsQueryCtrl = _controllersAnnotations_ctrl.PhasorAnnotaionsQueryCtrl;
         }],
         execute: function () {
-            _export('Datasource', OpenHistorianDataSource);
+            _export('Datasource', PhasorDataSource);
 
-            _export('QueryCtrl', OpenHistorianDataSourceQueryCtrl);
+            _export('QueryCtrl', PhasorDataSourceQueryCtrl);
 
-            _export('ConfigCtrl', OpenHistorianConfigCtrl);
+            _export('ConfigCtrl', PhasorConfigCtrl);
 
-            _export('QueryOptionsCtrl', OpenHistorianQueryOptionsCtrl);
+            _export('QueryOptionsCtrl', PhasorQueryOptionsCtrl);
 
-            _export('AnnotationsQueryCtrl', OpenHistorianAnnotaionsQueryCtrl);
+            _export('AnnotationsQueryCtrl', PhasorAnnotaionsQueryCtrl);
         }
     };
 });

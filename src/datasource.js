@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-export class OpenHistorianDataSource {
+export class PhasorDataSource {
   constructor(instanceSettings, $q, backendSrv, templateSrv) {
     this.type = instanceSettings.type;
     this.url = instanceSettings.url;

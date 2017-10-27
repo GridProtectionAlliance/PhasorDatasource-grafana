@@ -1,6 +1,6 @@
-## openHistorian Grafana Data Source
+## openHistorian Grafana Phasor Data Source
 
-This repository defines a Grafana [data source](http://docs.grafana.org/datasources/overview/) plug-in for the [openHistorian](https://github.com/GridProtectionAlliance/openHistorian).
+This repository defines a Grafana [data source](http://docs.grafana.org/datasources/overview/) plug-in for the phasor data contained in [openHistorian](https://github.com/GridProtectionAlliance/openHistorian).
 
 The openHistorian is a back office system developed by the [GridProtectionAlliance](https://www.gridprotectionalliance.org/) that is designed to efficiently integrate and archive process control data, e.g., SCADA, synchrophasor, digital fault recorder, or any other time-series data used to support process operations.
 
