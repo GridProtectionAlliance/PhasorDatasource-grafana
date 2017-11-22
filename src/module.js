@@ -35,3 +35,16 @@ export {
     PhasorQueryOptionsCtrl as QueryOptionsCtrl,
     PhasorAnnotaionsQueryCtrl as AnnotationsQueryCtrl
 }
+
+angular.module('grafana.directives').directive("queryOptions", function () {
+    return {
+        templateUrl: 'public/plugins/gridprotectionalliance-phasor-datasource/partial/query.options.html',
+        restrict: 'E',
+        controller: PhasorQueryOptionsCtrl,
+        controllerAs: 'queryOptionCtrl',
+        scope: {
+            flags: "=",
+            return: "=",
+        }
+    };
+});

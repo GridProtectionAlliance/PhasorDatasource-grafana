@@ -27,8 +27,12 @@
     <Compile Include="spec\datasource_spec.js" />
     <Compile Include="spec\test-main.js" />
     <Content Include="src\plugin.json" />
+    <Content Include="src\query_help.md" />
     <Content Include="src\README.md" />
     <Compile Include="src\datasource.js" />
+    <Compile Include="src\js\constants.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\module.js" />
     <Compile Include="dist\controllers\annotations_ctrl.js" />
     <Compile Include="dist\controllers\config_ctrl.js" />
@@ -38,8 +42,6 @@
     <Content Include="dist\css\isteven-multi-select.css" />
     <Content Include="dist\css\query-editor.css" />
     <Content Include="dist\img\openHistorian.png" />
-    <Compile Include="dist\js\bootstrap-multiselect.js" />
-    <Compile Include="dist\js\isteven-multi-select.js" />
     <Content Include="dist\partial\annotations.editor.html" />
     <Content Include="dist\partial\config.html" />
     <Content Include="dist\partial\query.editor.html" />

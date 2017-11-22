@@ -26,6 +26,19 @@ System.register(['./datasource', './controllers/query_ctrl', './controllers/conf
             _export('QueryOptionsCtrl', PhasorQueryOptionsCtrl);
 
             _export('AnnotationsQueryCtrl', PhasorAnnotaionsQueryCtrl);
+
+            angular.module('grafana.directives').directive("phasorQueryOptions", function () {
+                return {
+                    templateUrl: 'public/plugins/gridprotectionalliance-phasor-datasource/partial/query.options.html',
+                    restrict: 'E',
+                    controller: PhasorQueryOptionsCtrl,
+                    controllerAs: 'queryOptionCtrl',
+                    scope: {
+                        flags: "=",
+                        return: "="
+                    }
+                };
+            });
         }
     };
 });

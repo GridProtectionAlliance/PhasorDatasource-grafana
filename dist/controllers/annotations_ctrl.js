@@ -20,7 +20,7 @@ System.register([], function (_export, _context) {
 
       _export('PhasorAnnotationsQueryCtrl', PhasorAnnotationsQueryCtrl);
 
-      OpenHistorianAnnotationsQueryCtrl.templateUrl = 'partial/annotations.editor.html';
+      PhasorAnnotationsQueryCtrl.templateUrl = 'partial/annotations.editor.html';
     }
   };
 });

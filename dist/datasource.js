@@ -44,6 +44,11 @@ System.register(['lodash'], function (_export, _context) {
           this.q = $q;
           this.backendSrv = backendSrv;
           this.templateSrv = templateSrv;
+          this.options = {
+            includedDataFlags: instanceSettings.jsonData.Included == undefined ? 0xFFFFFFFF : instanceSettings.jsonData.Included,
+            excludedDataFlags: instanceSettings.jsonData.Excluded == undefined ? 0x00000000 : instanceSettings.jsonData.Excluded,
+            includeNormalData: instanceSettings.jsonData.IncludeNormal == undefined ? true : instanceSettings.jsonData.IncludeNormal
+          };
         }
 
         _createClass(PhasorDataSource, [{
@@ -58,8 +63,10 @@ System.register(['lodash'], function (_export, _context) {
               return this.q.when({ data: [] });
             }
 
+            query.options = this.options;
+
             return this.backendSrv.datasourceRequest({
-              url: this.url + '/query',
+              url: this.url + '/queryPhasors',
               data: query,
               method: 'POST',
               headers: { 'Content-Type': 'application/json' }
@@ -152,7 +159,7 @@ System.register(['lodash'], function (_export, _context) {
                 target: _this.templateSrv.replace(target.target),
                 refId: target.refId,
                 hide: target.hide,
-                queryType: target.queryType
+                referencephasor: target.referencePhasor
               };
             });
 

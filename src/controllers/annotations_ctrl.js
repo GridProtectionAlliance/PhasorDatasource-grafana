@@ -1,2 +1,2 @@
 export class PhasorAnnotationsQueryCtrl{}
-OpenHistorianAnnotationsQueryCtrl.templateUrl = 'partial/annotations.editor.html';
+PhasorAnnotationsQueryCtrl.templateUrl = 'partial/annotations.editor.html';
